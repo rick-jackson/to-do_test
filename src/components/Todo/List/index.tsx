@@ -15,6 +15,10 @@ const List: React.FC = () => {
     tasksAnimationsConfig
   );
 
+  if (!tasks.length) {
+    return <Styled.EmptyList>There are no scheduled tasks</Styled.EmptyList>;
+  }
+
   return (
     <Styled.List component="div">
       {transitions((style, item) => (
