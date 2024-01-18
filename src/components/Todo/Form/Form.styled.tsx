@@ -5,8 +5,8 @@ export const Form = styled.form`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 12px;
-  padding: 8px;
+  gap: ${({ theme }) => theme.spacing(3)};
+  padding: ${({ theme }) => theme.spacing(2)};
 `;
 
 export const Button = styled(MuiButton)`

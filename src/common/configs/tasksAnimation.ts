@@ -5,6 +5,7 @@ export const tasksAnimationsConfig = {
     opacity: 0,
     transform: "translateX(100%)",
     transition: "0.3s",
+    height: 0,
   },
   config: { duration: 500, friction: 10, tension: 400 },
   unique: true,

@@ -3,8 +3,8 @@ import { Typography } from "@mui/material";
 
 export const Toolbar = styled.div`
   background: #1c1d1f;
-  color: #fff;
-  padding: 0 8px;
+  color: ${({ theme }) => theme.palette.primary.contrastText};
+  padding: ${({ theme }) => theme.spacing(0, 2)};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,24 +13,24 @@ export const Toolbar = styled.div`
 export const TasksIndicators = styled.div`
   min-width: 120px;
   display: flex;
-  gap: 4px;
+  gap: ${({ theme }) => theme.spacing(1)};
 `;
 
 export const TasksCount = styled(Typography)`
-  border: 1px solid #f75851d6;
+  border: 1px solid ${({ theme }) => theme.palette.error.main};
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 4px;
   justify-content: center;
-  color: #f75851d6;
   border-radius: 2px;
   font-weight: 700;
+  gap: ${({ theme }) => theme.spacing(1)};
+  color: ${({ theme }) => theme.palette.error.main};
 `;
 
 export const CompletedTasksCount = styled(TasksCount)`
-  border-color: #fff;
-  color: #fff;
+  border-color: ${({ theme }) => theme.palette.primary.contrastText};
+  color: ${({ theme }) => theme.palette.primary.contrastText};
 `;
 
 export const Title = styled(Typography)`

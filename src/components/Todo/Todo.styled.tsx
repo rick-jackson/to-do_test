@@ -8,5 +8,5 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  background: #f75851d6;
+  background: ${({ theme }) => theme.palette.error.main};
 `;
