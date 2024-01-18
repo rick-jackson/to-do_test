@@ -7,7 +7,7 @@ import {
 import styled from "styled-components";
 
 export const Item = styled(ListItem)<{ $completed: boolean } & ListItemProps>`
-  color: #fff;
+  color: ${({ theme }) => theme.palette.primary.contrastText};
   ${({ $completed }) => $completed && "background: #1C1D1F; color: grey"}
 `;
 
