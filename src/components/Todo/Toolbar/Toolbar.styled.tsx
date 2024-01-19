@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Typography } from "@mui/material";
 
 export const Toolbar = styled.div`
-  background: #1c1d1f;
+  background: ${({ theme }) => theme.palette.primary.background};
   color: ${({ theme }) => theme.palette.primary.contrastText};
-  padding: ${({ theme }) => theme.spacing(0, 2)};
+  padding: ${({ theme }) => theme.spacing(1, 2)};
   display: flex;
   align-items: center;
   justify-content: space-between;

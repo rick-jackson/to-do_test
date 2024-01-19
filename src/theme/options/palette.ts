@@ -17,6 +17,7 @@ const palette = {
   primary: {
     main: "#fff",
     contrastText: "#fff",
+    background: "#1c1d1f",
   },
   error: {
     main: "#f75851d6",

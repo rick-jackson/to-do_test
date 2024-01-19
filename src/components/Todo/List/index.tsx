@@ -3,7 +3,7 @@ import { useTransition, animated } from "react-spring";
 import { tasksAnimationsConfig } from "../../../common/configs/tasksAnimation";
 import { getPreparedTasks } from "../../../common/utils/sortedTasks";
 import { useAppSelector } from "../../../common/hooks/store";
-import ListItem from "../Item";
+import Task from "../Task";
 
 import * as Styled from "./List.styled";
 
@@ -21,9 +21,9 @@ const List: React.FC = () => {
 
   return (
     <Styled.List component="div">
-      {transitions((style, item) => (
-        <animated.div style={style} key={item.id}>
-          <ListItem {...item} />
+      {transitions((style, task) => (
+        <animated.div style={style} key={task.id}>
+          <Task {...task} />
         </animated.div>
       ))}
     </Styled.List>

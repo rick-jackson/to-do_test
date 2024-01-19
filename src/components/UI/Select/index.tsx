@@ -15,7 +15,7 @@ const Select: React.FC = () => {
   };
 
   return (
-    <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+    <FormControl variant="standard" sx={{ minWidth: 120 }}>
       <MuiSelect value={filter} onChange={handleChange} color="error">
         {Object.entries(filterConfig).map(([key, value]) => (
           <MenuItem key={key} value={key}>
